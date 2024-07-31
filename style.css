@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #59e6076c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px); /* Mengurangi tinggi header */
+    width: 100%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.todo-button {
+    padding: 10px;
+    border: none;
+    background: #00b4d8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.todo-button:hover {
+    background: #0096c7;
+}
+
+.select {
+    margin-left: 10px;
+}
+
+.filter-todos {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    cursor: pointer;
+}
+
+.todo-container {
+    width: 500px;
+    max-width: 100%;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-item {
+    flex: 1;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.complete-btn, .trash-btn {
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.complete-btn:hover, .trash-btn:hover {
+    background: #d62839;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}

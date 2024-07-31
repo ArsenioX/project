@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <!-- Link ke Google Fonts untuk font Poppins -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <!-- Link ke stylesheet untuk gaya halaman -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>  
+    <header>
+        <!-- Judul halaman -->
+        <h1>Todolist</h1>
+    </header>
+
+    <main>
+        <!-- Formulir untuk menambahkan tugas baru -->
+        <form action="">
+            <!-- Input teks untuk memasukkan tugas baru -->
+            <input type="text" class="todo-input" placeholder="Add a new todo..." />
+            <!-- Tombol untuk menambahkan tugas -->
+            <button class="todo-button" type="submit"><i class="fas fa-plus-square"></i></button>
+            <!-- Dropdown untuk memfilter tugas -->
+            <div class="select">
+                <select name="todos" class="filter-todos">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="uncompleted">Uncompleted</option>
+                </select>
+            </div>
+        </form>
+        <!-- Container untuk daftar tugas -->
+        <div class="todo-container">
+            <ul class="todo-list"></ul> <!-- Daftar tugas akan ditampilkan di sini -->
+        </div>
+    </main>
+
+    <!-- Link ke file JavaScript untuk fungsionalitas todolist -->
+    <script src="./app.js"></script> 
+</body>
+</html>
